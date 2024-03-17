@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Information</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Node Information</h1>
+        <div class="form-group">
+            <label for="nodeInput">Select or Enter Node:</label>
+            <select id="nodeInput">
+                <option value="Legal Services Buyer">Legal Services Buyer</option>
+                <option value="Legal Services Provider">Legal Services Provider</option>
+                <option value="Area of Law">Area of Law</option>
+                <option value="Role in Matter">Role in Matter</option>
+                <option value="Client Identification Detail">Client Identification Detail</option>
+                <option value="Legal Aid Organization">Legal Aid Organization</option>
+                <option value="Innocence Commission">Innocence Commission</option>
+                <option value="Assignor">Assignor</option>
+                <option value="Broker">Broker</option>
+                <option value="Afghan afghani">Afghan afghani</option>
+                <option value="custom">Enter Custom Node Label...</option> <!-- New option for custom input -->
+            </select>
+            <input type="text" id="customNodeLabel" style="display: none;" placeholder="Enter custom label..."> <!-- Input field for custom label (hidden by default) -->
+            <button onclick="getNodeInfo()">Get Information</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
